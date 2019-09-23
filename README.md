@@ -71,7 +71,7 @@ _TBC_
 <!-- _How to deploy the code/app into test/staging/production_ -->
 
 
-To github pages at [(http://pietropassarelli.com/interactive-audio-ebook/huckfinn_01_twain_apc_64kb.html](http://pietropassarelli.com/interactive-audio-ebook/huckfinn_01_twain_apc_64kb.html)
+To github pages at [http://pietropassarelli.com/interactive-audio-ebook/huckfinn_01_twain_apc_64kb.html](http://pietropassarelli.com/interactive-audio-ebook/huckfinn_01_twain_apc_64kb.html)
 
 ```
 npm run deploy:ghpages
