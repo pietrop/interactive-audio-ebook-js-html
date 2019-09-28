@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '10.x'
-      - run: |
-          npm install
-          npm run start:transcribe
-          ls ./src/transcribe-and-align/sample
+      - run: npm install
+      - run: ls ./src/transcribe-and-align/sample
+      - run: npm run start:transcribe
+      - run: ls ./src/transcribe-and-align/sample
