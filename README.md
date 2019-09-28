@@ -53,6 +53,11 @@ We are using [this template for ADR](https://gist.github.com/iaincollins/92923cc
 
 Node version is set in node version manager [`.nvmrc`](https://github.com/creationix/nvm#nvmrc) 
 
+
+>worker_threads became available in Node.js 10.5.0. Prior to Node.js 11.7.0, you could not access the module unless you started node with the `--experimental-worker` flag.
+
+from https://medium.com/@Trott/using-worker-threads-in-node-js-80494136dbb6
+
 <!-- _Coding style convention ref optional, eg which linter to use_ -->
 
 <!-- _Linting, github pre-push hook - optional_ -->

@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "start:transcribe": "node --experimental-worker src/transcribe-and-align/example-usage.js",
         "start": "node src/index.js",
         "test": "echo \"Error: no test specified\" && exit 1",
         "deploy:ghpages": "gh-pages -d public"
@@ -16,7 +17,7 @@
         "download": "^7.1.0",
         "node-html-parser": "^1.1.16",
         "nomar": "^1.1.0",
-        "pocketsphinx-stt": "^2.0.2",
+        "pocketsphinx-stt": "^3.0.0-alpha.2",
         "request": "^2.88.0",
         "rss-parser": "^3.7.2",
         "unzip": "^0.1.11",
