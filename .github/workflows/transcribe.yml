@@ -1,0 +1,19 @@
+name: Transcribe
+# This workflow is triggered on pushes to the repository.
+on: [push]
+
+jobs:
+  build:
+    # Job name is TestTranscribe
+    name: TestTranscribe
+    # This job runs on Linux
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+      - run: npm install
+      - run: ls ./src/transcribe-and-align/sample
+      - run: npm run start:transcribe
+      - run: ls ./src/transcribe-and-align/sample
