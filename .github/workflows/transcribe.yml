@@ -1,21 +1,13 @@
-name: Node CI
+name: Transcribe
 
 on: [push]
 
-jobs
-  build:
-    name: Transcribe
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js 
-      uses: actions/setup-node@v1
-      with:
-        node-version: '10.x'
-    - name: npm install, build, and test
-      run: |
-        npm install
-        npm run start:transcribe
-        ls ./src/transcribe-and-align/sample
-      env:
-        CI: true
+steps:
+- uses: actions/checkout@master
+- uses: actions/setup-node@v1
+  with:
+    node-version: '10.x'
+- run: |
+    npm install
+    npm run start:transcribe
+    ls ./src/transcribe-and-align/sample
