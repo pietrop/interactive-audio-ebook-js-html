@@ -5,8 +5,8 @@ const transcribe = require("pocketsphinx-stt");
 const alignSTT = require("@bbc/stt-align-node").alignSTT;
 
 const main = async audioEbook => {
-  const audioFile = path.join(process.cwd(),"audio", audioEbook.chapters[0].fileName);
-  console.log('audioEbook.chapters[0].fileName', audioFile);
+  const audioFile = path.join(process.cwd(),"audio", audioEbook.chapters[0].url);
+  console.log('audioEbook.chapters[0].url', audioFile);
   const textFile = audioEbook.chapters[0].text;
   //  create STT for audio files
   return new Promise((resolve, reject) => {
